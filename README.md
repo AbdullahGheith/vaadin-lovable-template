@@ -1,23 +1,33 @@
 # Lovable Vaadin Starter README
 
-- [ ] TODO Replace or update this README with instructions relevant to your application
+## Create a lovable application
 
-To start the application in development mode, import it into your IDE and run the `Application` class. 
-You can also start the application from the command line by running: 
+Start off by prompting lovable.dev, then click on the + button, click knowledge
+Paste in the [knowledge](knowledge.md)
 
-```bash
-./mvnw
+Then tell it to:
+
+``` Update this project according to the knowledge```
+
+If you are lucky, it will do it correctly.
+
+## Convert lovable to vaadin
+
+Find your primary page. I.e. there should only be 1 element in your index.tsx render section in lovable. If you created an app for notes, it should have a single tag in the render section called <NotesApp/> - Go to the notesapp.tsx and use that content
+
+Go to [this GPT](https://chatgpt.com/g/g-67f838fcebf88191aaa54fa7612a7fef-lovable-to-vaadin-converter) and tell it to:
+
+```
+convert this:
+
+<<Paste in your lovable code here>>
 ```
 
-To build the application in production mode, run:
+It should convert it to vaadin code.
 
-```bash
-./mvnw -Pproduction package
-```
+Now download the code from lovable, and put everything in the frontend folder.
 
-## Getting Started
+## The rest:
 
-The [Getting Started](https://vaadin.com/docs/latest/getting-started) guide will quickly familiarize you with your new
-Lovable Vaadin Starter implementation. You'll learn how to set up your development environment, understand the project 
-structure, and find resources to help you add muscles to your skeleton — transforming it into a fully-featured 
-application.
+- [ ] Copy the css into your styles.css
+- [ ] Make sure that all dependencies are present in the package.json and ```npm i``` has been run
